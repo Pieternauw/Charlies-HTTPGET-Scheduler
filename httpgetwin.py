@@ -9,7 +9,7 @@ i = 0
 for i in range(48):
     try:
         response = requests.get("https://ecab.charleystaxi.com/Reservations/LogIn.aspx")
-        toaster.show_toast("Connected Successfully")
+        print(responce)
 
     except ConnectionError:
         toaster.show_toast("Error Connecting")
